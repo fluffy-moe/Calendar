@@ -1,7 +1,6 @@
 package com.codbking.calendar.exaple;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,7 +8,9 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.codbking.calendar.CaledarAdapter;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.codbking.calendar.CalendarAdapter;
 import com.codbking.calendar.CalendarBean;
 import com.codbking.calendar.CalendarDateView;
 import com.codbking.calendar.CalendarUtil;
@@ -72,7 +73,7 @@ public class XiaomiActivity extends AppCompatActivity {
 
     private void initView() {
 
-        mCalendarDateView.setAdapter(new CaledarAdapter() {
+        mCalendarDateView.setAdapter(new CalendarAdapter() {
             @Override
             public View getView(View convertView, ViewGroup parentView, CalendarBean bean) {
 
