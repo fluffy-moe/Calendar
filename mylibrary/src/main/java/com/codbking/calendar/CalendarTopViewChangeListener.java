@@ -7,12 +7,6 @@ package com.codbking.calendar;
  * blog:http://www.jianshu.com/users/49d47538a2dd/latest_articles
  */
 
-public interface CalendarTopView {
-
-	int[] getCurrentSelectPosition();
-
-	int getItemHeight();
-
-	void setCalendarTopViewChangeListener(CalendarTopViewChangeListener listener);
-
+public interface CalendarTopViewChangeListener {
+	void onLayoutChange(CalendarTopView topView);
 }
